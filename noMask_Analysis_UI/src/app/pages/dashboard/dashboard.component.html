@@ -1,0 +1,48 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <div class="row">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--8">
+  <div class="row">
+    <div class="col-xl-6 mb-5 mb-xl-0">
+      <div class="card bg-gradient-default shadow" style="height: 115%;">
+        <div class="card-header bg-transparent">
+          <div class="row">
+            <div class="col">
+              <h6 class="text-uppercase text-light ls-1 mb-1">Calendar</h6>
+            </div>
+          </div>
+          <div class="chart">
+            <full-calendar defaultView="dayGridMonth" plugins="calendarPlugins" [options]="calendarOptions">
+            </full-calendar>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div class="card shadow">
+        <div class="card-header bg-transparent">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="text-uppercase text-muted ls-1 mb-1">Overview</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+            <h3 *ngIf="text">{{text}}</h3>
+          <div [hidden] = "!flag" class="graph">
+            <canvas id="lineChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top: 80px; margin-left: 25px;">
+    <h5>
+      ©2020 All rights reserved, Mphasis</h5>
+  </div>
+</div>

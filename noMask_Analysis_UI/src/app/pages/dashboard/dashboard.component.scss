@@ -1,0 +1,33 @@
+.calendar {
+    height: 90%;
+    width: 100%;
+    // // background-image: linear-gradient(to bottom right,#00416a,  88%);
+}
+
+::ng-deep a:not([href]):not([tabindex]) {
+    color: #5e72e4;
+}
+
+::ng-deep .chart {
+    height: 440px;
+}
+
+::ng-deep .pt-md-8 {
+    padding-top: 6rem;
+}
+
+::ng-deep .main-content {
+    margin-left: 0px;
+}
+.graph {
+    height: 100%;
+    background-image: linear-gradient(to bottom right,#cc95c0,#dbd4b4,#7aa1d2 88%);
+}
+
+::ng-deep .fc .fc-view-harness {
+    height: 450px !important;
+}
+
+::ng-deep .fc .fc-toolbar-title {
+    color: #5e72e4;
+}
